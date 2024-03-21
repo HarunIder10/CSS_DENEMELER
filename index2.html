@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+         <title>css sayfasi</title>
+
+        <style>
+            /* h3{
+                color: blue;
+            } */
+
+            .yazi_ozellik{
+                color: red;
+                font-size: 20px;
+            }
+
+            #paragraf1{
+                color: red;
+            }
+
+            .box1{
+                background-color: #D7414b;
+                width: 400px;
+                height: 400px;
+            }          
+            
+        </style>
+
+        <style>
+            .kutu1{
+                background-color: grey;
+                width: 400px;
+                height: 400px;
+                color: aliceblue;
+            }
+            
+
+            .kutu2{
+                background-color: lightblue;
+                width: 300px;
+                height: 300px;
+                color: black;
+                text-align: center;
+                background-image: url(think_twice_code_once!.png);
+                background-size: cover;
+                background-position: center;
+                border: 5px solid rgb(28, 185, 78);
+            }
+
+            .kutu3{
+                background-color: lightblue;
+                width: 300px;
+                height: 300px;
+                /* kalınlığı tipi rengi */
+                border: 10px inset lightgray;
+                text-align: center;
+            }
+
+            .kutu4{
+                background-color:lightblue;
+                width: 300px;
+                height: 300px;
+                border: 5px solid rgb(113, 134, 130);
+                border-radius: 50%;
+                text-align: center;
+                background-image: url(picture1.jpg);
+                background-size: cover;
+                background-position: center;               
+            }
+
+            .kutu5{
+                background-color: red;
+                width: 50%;
+                height: 400px;
+            }
+
+
+            .kutu6{
+                background-color: blueviolet;
+                width: 300px;
+                height: 200px;
+                color: #fff;
+            }
+
+            .kutu7{
+                background-color: lightblue;
+                border: 5px solid lightgray;
+                width: 50%;
+                height: 400px;
+                margin-top: 50px;
+                margin-bottom: 30px;
+                margin-left: 40px;
+            }
+            
+            .kutu8{
+                background-color: aqua;
+                border: 5px solid lightslategray;
+                width: 50%;
+                height: 400px;
+                
+            }
+
+            .pi{
+                padding-top: 240px;
+                padding-left: 5px;
+                padding-right: 5px;
+                color: #161313;
+                text-align: right;
+            }
+
+
+            .kutu9{
+                background-color: red;
+                width: 300px;
+                height: 300px;
+                display: inline-block;
+            }
+
+            .kutu10{
+                background-color: grey;
+                width: 300px;
+                height: 300px;
+                display: inline-block;
+                margin-left: 10px;
+            }
+
+            .metin{
+                color: black;
+                background-color: antiquewhite;
+                text-align: left;
+                font-weight: bold;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-style: italic;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                text-decoration: underline;
+                word-spacing: 4px;
+
+            }
+
+        </style>
+
+        <link rel="stylesheet" href="test.css">
+        
+    </head>
+
+    <body>
+        <!--
+            css kullanmanın yolları ;
+
+            1- etiket kullanarak dahil etme
+            2- style etiketi ile dahil etme
+            3- harici bir etiket yardımıya dahil etme
+
+        -->
+
+        <h4 style="color: red ; background-color: yellow;">Ahmet Demir</h4>
+
+        <h2>Ahmet</h2>
+        <h2>ali</h1>
+        <h2>mehmet</h2>
+        <h2>kaan</h2>
+        <h2>mahmut</h2>
+
+        <!--
+            1-id: eşsizdir
+            2- class : birden çok kullanılabilir
+            3- etiket ismi
+
+        -->
+
+        <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam labore vitae fuga inventore sapiente unde.</h3>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, facere.</h3>
+        <h3 class="yazi_ozellik">Lorem ipsum dolor sit amet.</h3>
+
+        <p id="paragraf1">FATİH AKIN</p>
+
+        <div class="box1">
+           <p style="color: aliceblue;">örnek renk kullanımı</p>
+        </div>
+
+            
+        <!-- div kullanımı -->
+
+        <div class="kutu1">
+            <p>head etiketinin içinnde oluşturduğumuz style etiketi ile kutu1 sınıfına istediğimiz özellikleri atayabilriz</p>
+        </div>
+
+        <br>
+        <!-- Backgraund kullanmak -->
+
+            <div class="kutu2">
+                <!-- <h1>Lorem ipsum</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo eaque similique omnis tenetur maxime exercitationem deserunt dolore et iste laborum!</p> -->
+
+            </div>
+
+        <!-- border ve radius özellikleri
+
+        1-dotted: Çizginin bir dizi nokta ile çizildiği bir çizgi tarzıdır.
+        2-dashed: Çizginin bir dizi kesik çizgi ile çizildiği bir çizgi tarzıdır.
+        3-solid: Bir sürekli çizgi tarzıdır, yani çizgi boyunca hiç kesinti yoktur.
+        4-double: Çift çizgi tarzıdır, yani iki paralel çizgi ile çerçevelenmiş gibi görünür.
+        5-groove: Çizginin içbükey bir oluk şeklinde çizildiği bir çizgi tarzıdır. Çerçeve, çizginin iki kenarı arasında bir oluk gibi görünür.
+        6-ridge: Çizginin dışbükey bir sırt şeklinde çizildiği bir çizgi tarzıdır. Çerçeve, çizginin iki kenarı arasında bir sırt gibi yükselir.
+        7-inset: Çizginin dış kenarlarının içeri doğru büküldüğü bir çizgi tarzıdır. Çerçeve, içeri doğru bir gölge gibi görünür.
+        8-outset: Çizginin dış kenarlarının dışarı doğru büküldüğü bir çizgi tarzıdır. Çerçeve, dışarı doğru bir gölge gibi görünür.
+        
+        -->
+        <br>
+        <div class="kutu3">
+            <h1>border</h1>
+            <p>bu alanda border kullanıldı</p>
+            <p>(border: 10px inset lightgray;)</p>
+        </div>
+        <br>
+
+        <div class="kutu4">
+
+        </div>
+        <br>
+
+        <div class="kutu5">
+            <div class="kutu6">
+                <h1>İÇ DİV</h1>
+            </div>
+        </div>
+
+        <!-- margin
+             bir HTML elementinin kenarlarının dışındaki boşluğu belirler.
+             Yani, bir elementin içeriği ile dış kenarları arasındaki mesafeyi ayarlar. margin özelliği, elementin etrafındaki boş alanı artırmak veya azaltmak için kullanılır
+             ve elementin diğer elementlere olan konumunu ve ilişkisini belirler.
+
+             top: üst
+             buttom: alt
+             left: sol
+             right: sağ
+        -->
+
+        <h4>Ahmet Dursun</h4>
+        <div class="kutu7">
+
+        </div>
+
+        <p>iletişim sayfasi</p>
+
+        <p style="margin-top: 30px; margin-left: 20px;">css dersleri</p>
+
+        <!-- padding
+            bir HTML elementinin içeriği ile dış kenarları arasındaki boşluğu belirler. 
+            Yani, padding, bir elementin içerisindeki içeriğin ve elementin dış kenarları arasındaki boşluğu ayarlar. 
+            padding özelliği, elementin içerisine boş alan eklemek veya çıkarmak için kullanılır ve elementin içeriğinin kenarlara olan uzaklığını belirler.
+        -->
+
+        <div class="kutu8">
+            <h3 style="text-align: center;">ali mert</h3>
+            <P style="margin-left: 20px;">WEB SİTEME HOŞ GELDİNİZ</P>
+            <p style="padding-left: 20px;">bu web sitenin tüm telif hakları saklıdır</p>
+
+            <p class="pi">iletişim</p>
+
+        </div>
+
+        <!-- display özelliği 
+            1-inline: sadece bulunduğu yer kadar yer kaplar.genişlik ve yükseklik verilemez
+            2-block: bulınduğu satırın tamamını akplar
+            3-inline-block:
+        -->
+
+        <p>paragraf</p>
+        <a href="#">link1</a>
+
+        <br>
+        <p style="display: inline;">paragraf3</p>
+        <br><br>
+
+        <div class="kutu9"></div>
+        <div class="kutu10"></div>
+
+        <!-- text özellikleri
+            1-color
+            2-background-color
+            3-text-align
+            4-font-weight
+            5-font-family
+            6-font-style
+            7-text-transform
+            8-letter-spacing
+            9-text-decoration
+            10-word-spacing
+        -->
+
+        <p class="metin">başarı bedel gerektirir</p> 
+        <hr style="border: 3px solid red;">
+
+
+        
+    </body>
+
+</html>
